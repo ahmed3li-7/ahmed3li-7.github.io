@@ -5,10 +5,10 @@ title: Ahmed Ali Hakim Abdulgawad
 
 <style>
   .wrapper {
-    width: min(1100px, calc(100% - 32px));
+    width: min(1040px, calc(100% - 32px));
   }
 
-  header {
+  header:not(.cv-header) {
     display: none;
   }
 
@@ -18,11 +18,11 @@ title: Ahmed Ali Hakim Abdulgawad
   }
 
   .cv-page {
-    max-width: 980px;
+    max-width: 920px;
     margin: 32px auto;
     padding: 0 8px 32px;
     color: #1f2937;
-    line-height: 1.7;
+    line-height: 1.65;
   }
 
   .cv-card {
@@ -36,55 +36,56 @@ title: Ahmed Ali Hakim Abdulgawad
   .cv-header {
     display: grid;
     grid-template-columns: 150px 1fr;
-    gap: 28px;
+    gap: 24px;
     align-items: center;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    position: static;
   }
 
   .profile-photo {
+    display: block;
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 24px;
     border: 4px solid #ffffff;
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
     background: #eef2ff;
   }
 
   .cv-title h1 {
-    margin: 0 0 10px;
-    font-size: 2.4rem;
+    margin: 0 0 8px;
+    font-size: 2.2rem;
     line-height: 1.1;
     color: #0f172a;
   }
 
   .cv-subtitle {
     margin: 0 0 10px;
-    font-size: 1.12rem;
+    font-size: 1.05rem;
     font-weight: 700;
     color: #2563eb;
   }
 
   .cv-founder {
     display: inline-block;
-    margin: 0 0 14px;
-    padding: 8px 14px;
+    margin: 0 0 12px;
+    padding: 7px 13px;
     border-radius: 999px;
     background: #eff6ff;
     border: 1px solid #bfdbfe;
     color: #1d4ed8;
     font-weight: 700;
-    letter-spacing: 0.2px;
   }
 
   .contact-line {
     margin: 0;
     color: #475569;
-    font-size: 0.98rem;
+    font-size: 0.97rem;
   }
 
   .cv-section {
-    padding: 20px 0;
+    padding: 18px 0;
     border-top: 1px solid #e5e7eb;
   }
 
@@ -94,8 +95,8 @@ title: Ahmed Ali Hakim Abdulgawad
   }
 
   .cv-section h2 {
-    margin: 0 0 12px;
-    font-size: 1.28rem;
+    margin: 0 0 10px;
+    font-size: 1.22rem;
     color: #0f172a;
   }
 
@@ -105,12 +106,12 @@ title: Ahmed Ali Hakim Abdulgawad
   }
 
   .cv-section ul {
-    margin: 10px 0 0 20px;
+    margin: 8px 0 0 20px;
   }
 
   .tag-list {
     list-style: none;
-    margin: 12px 0 0;
+    margin: 10px 0 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -119,11 +120,11 @@ title: Ahmed Ali Hakim Abdulgawad
 
   .tag-list li {
     margin: 0;
-    padding: 8px 12px;
+    padding: 7px 12px;
     border: 1px solid #dbeafe;
     background: #f8fbff;
     border-radius: 999px;
-    font-size: 0.95rem;
+    font-size: 0.94rem;
   }
 
   .item-title {
@@ -133,6 +134,7 @@ title: Ahmed Ali Hakim Abdulgawad
 
   .item-meta {
     color: #64748b;
+    margin: 2px 0 6px;
   }
 
   .contact-list {
@@ -161,7 +163,7 @@ title: Ahmed Ali Hakim Abdulgawad
     }
 
     .cv-title h1 {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
 
     .contact-line {
@@ -176,8 +178,8 @@ title: Ahmed Ali Hakim Abdulgawad
       <img class="profile-photo" src="assets/profile-placeholder.svg" alt="Profile photo of Ahmed Ali Hakim Abdulgawad">
       <div class="cv-title">
         <h1>Ahmed Ali Hakim Abdulgawad</h1>
-        <p class="cv-subtitle">Medical Student | Founder of RafeeQ | Aspiring Healthcare & Learning Technology Contributor</p>
-        <p class="cv-founder">Founder of RafeeQ — Medical Learning Platform</p>
+        <p class="cv-subtitle">Medical Student | Founder of RafeeQ</p>
+        <p class="cv-founder">Founder of RafeeQ</p>
         <p class="contact-line">
           <strong>Email:</strong> <a href="mailto:ahmedali17v@gmail.com">ahmedali17v@gmail.com</a> |
           <strong>Phone:</strong> <a href="tel:+201008988182">+20 100 898 8182</a> |
@@ -189,7 +191,7 @@ title: Ahmed Ali Hakim Abdulgawad
     <section class="cv-section">
       <h2>Profile</h2>
       <p>
-        Motivated medical student and founder of RafeeQ, a medical learning platform created to support students through accessible and well-structured educational resources. I am passionate about continuous learning, healthcare innovation, and the use of technology to improve education. I actively seek opportunities to grow, contribute, and build meaningful projects with long-term impact.
+        Medical student and founder of RafeeQ, a learning platform for medical students. I am interested in education, technology, and continuous self-development.
       </p>
     </section>
 
@@ -207,21 +209,18 @@ title: Ahmed Ali Hakim Abdulgawad
           <span class="item-title">Founder</span> — RafeeQ
           <div class="item-meta">Medical learning platform</div>
           <div>
-            Built and developed the concept of RafeeQ to help medical students access more organized and supportive learning resources. This initiative reflects my interest in educational development, leadership, and practical problem-solving.
+            Started RafeeQ as a platform to support medical students with helpful and organized learning resources.
           </div>
         </li>
       </ul>
-      <p>
-        As I continue building my professional path, I focus on developing my skills through self-learning, project building, and ongoing academic growth.
-      </p>
     </section>
 
     <section class="cv-section">
       <h2>Skills</h2>
       <ul>
-        <li><strong>Languages:</strong> English — B2; French — A2.</li>
-        <li><strong>Digital skills:</strong> Microsoft Word, Microsoft PowerPoint, presentation design, and basic programming knowledge.</li>
-        <li><strong>Professional strengths:</strong> Curiosity, self-learning, analytical thinking, communication, leadership, and presentation skills.</li>
+        <li><strong>Languages:</strong> Arabic — Native; English — B2; French — A2.</li>
+        <li><strong>Digital skills:</strong> Microsoft Word, Microsoft PowerPoint, presentation skills, and basic programming knowledge.</li>
+        <li><strong>Strengths:</strong> Self-learning, communication, analytical thinking, and leadership.</li>
       </ul>
     </section>
 
@@ -229,16 +228,13 @@ title: Ahmed Ali Hakim Abdulgawad
       <h2>Projects</h2>
       <ul>
         <li>
-          <span class="item-title">RafeeQ</span> — Founder and project lead of a learning platform designed to support medical students with accessible educational resources and a more structured study experience.
+          <span class="item-title">RafeeQ</span> — Founder of a learning platform designed to support medical students.
         </li>
       </ul>
     </section>
 
     <section class="cv-section">
       <h2>Interests</h2>
-      <p>
-        My interests combine strategic thinking, scientific exploration, intellectual curiosity, and active engagement with the world around me.
-      </p>
       <ul class="tag-list">
         <li>Chess</li>
         <li>Swimming</li>
@@ -264,5 +260,3 @@ title: Ahmed Ali Hakim Abdulgawad
     </section>
   </div>
 </div>
-
-> To use your real profile picture, upload it to `assets/profile.jpg` and replace `assets/profile-placeholder.svg` with `assets/profile.jpg`.
