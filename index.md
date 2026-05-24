@@ -5,111 +5,116 @@ title: Ahmed Ali Hakim Abdulgawad
 
 <style>
   .wrapper {
-    width: min(1040px, calc(100% - 32px));
+    width: min(980px, calc(100% - 32px));
   }
 
-  header:not(.cv-header) {
+  header:not(.cv-top),
+  footer {
     display: none;
   }
 
   section {
-    width: 100%;
     float: none;
+    width: 100%;
   }
 
-  .cv-page {
-    max-width: 920px;
-    margin: 32px auto;
-    padding: 0 8px 32px;
+  .cv-shell {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 0 8px 40px;
     color: #1f2937;
-    line-height: 1.65;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
   .cv-card {
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 24px;
-    padding: 32px;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    border-radius: 22px;
+    padding: 34px;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
   }
 
-  .cv-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 24px;
+  .cv-top {
+    display: flex;
     align-items: center;
-    margin-bottom: 24px;
-    position: static;
+    gap: 24px;
+    margin-bottom: 28px;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
   }
 
-  .profile-photo {
-    display: block;
-    width: 150px;
-    height: 150px;
+  .cv-photo {
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 24px;
+    border-radius: 20px;
     border: 4px solid #ffffff;
-    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
     background: #eef2ff;
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.12);
+    flex-shrink: 0;
   }
 
-  .cv-title h1 {
+  .cv-name {
     margin: 0 0 8px;
     font-size: 2.2rem;
     line-height: 1.1;
     color: #0f172a;
   }
 
-  .cv-subtitle {
+  .cv-role {
     margin: 0 0 10px;
+    color: #2563eb;
     font-size: 1.05rem;
     font-weight: 700;
-    color: #2563eb;
   }
 
-  .cv-founder {
+  .cv-badge {
     display: inline-block;
-    margin: 0 0 12px;
-    padding: 7px 13px;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    border: 1px solid #bfdbfe;
     border-radius: 999px;
     background: #eff6ff;
-    border: 1px solid #bfdbfe;
     color: #1d4ed8;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.95rem;
   }
 
-  .contact-line {
+  .cv-contact {
     margin: 0;
     color: #475569;
-    font-size: 0.97rem;
+    font-size: 0.96rem;
+    line-height: 1.7;
   }
 
   .cv-section {
-    padding: 18px 0;
+    padding-top: 18px;
+    margin-top: 18px;
     border-top: 1px solid #e5e7eb;
-  }
-
-  .cv-section:first-of-type {
-    border-top: 0;
-    padding-top: 0;
   }
 
   .cv-section h2 {
     margin: 0 0 10px;
-    font-size: 1.22rem;
+    font-size: 1.2rem;
     color: #0f172a;
   }
 
   .cv-section p,
   .cv-section li {
     font-size: 1rem;
+    line-height: 1.7;
   }
 
   .cv-section ul {
     margin: 8px 0 0 20px;
   }
 
-  .tag-list {
+  .compact-list li {
+    margin-bottom: 8px;
+  }
+
+  .interest-tags {
     list-style: none;
     margin: 10px 0 0;
     padding: 0;
@@ -118,124 +123,106 @@ title: Ahmed Ali Hakim Abdulgawad
     gap: 10px;
   }
 
-  .tag-list li {
+  .interest-tags li {
     margin: 0;
     padding: 7px 12px;
-    border: 1px solid #dbeafe;
-    background: #f8fbff;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 999px;
     font-size: 0.94rem;
   }
 
-  .item-title {
-    font-weight: 700;
-    color: #111827;
-  }
-
-  .item-meta {
-    color: #64748b;
-    margin: 2px 0 6px;
-  }
-
   .contact-list {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .contact-list li {
     margin-bottom: 8px;
   }
 
-  @media (max-width: 768px) {
+  strong {
+    color: #111827;
+  }
+
+  @media (max-width: 700px) {
     .cv-card {
       padding: 22px;
-      border-radius: 18px;
     }
 
-    .cv-header {
-      grid-template-columns: 1fr;
-      text-align: center;
+    .cv-top {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .profile-photo {
-      margin: 0 auto;
-    }
-
-    .cv-title h1 {
+    .cv-name {
       font-size: 1.9rem;
     }
 
-    .contact-line {
-      line-height: 1.8;
+    .cv-photo {
+      width: 130px;
+      height: 130px;
     }
   }
 </style>
 
-<div class="cv-page">
+<div class="cv-shell">
   <div class="cv-card">
-    <header class="cv-header">
-      <img class="profile-photo" src="assets/profile-placeholder.svg" alt="Profile photo of Ahmed Ali Hakim Abdulgawad">
-      <div class="cv-title">
-        <h1>Ahmed Ali Hakim Abdulgawad</h1>
-        <p class="cv-subtitle">Medical Student | Founder of RafeeQ</p>
-        <p class="cv-founder">Founder of RafeeQ</p>
-        <p class="contact-line">
-          <strong>Email:</strong> <a href="mailto:ahmedali17v@gmail.com">ahmedali17v@gmail.com</a> |
-          <strong>Phone:</strong> <a href="tel:+201008988182">+20 100 898 8182</a> |
+    <div class="cv-top">
+      <img class="cv-photo" src="assets/profile-placeholder.svg" alt="Profile photo of Ahmed Ali Hakim Abdulgawad">
+      <div>
+        <h1 class="cv-name">Ahmed Ali Hakim Abdulgawad</h1>
+        <p class="cv-role">Medical Student | Founder of RafeeQ</p>
+        <div class="cv-badge">Founder of RafeeQ</div>
+        <p class="cv-contact">
+          <strong>Email:</strong> <a href="mailto:ahmedali17v@gmail.com">ahmedali17v@gmail.com</a><br>
+          <strong>Phone:</strong> <a href="tel:+201008988182">+20 100 898 8182</a><br>
           <strong>WhatsApp:</strong> <a href="https://wa.me/201101452846">+20 110 145 2846</a>
         </p>
       </div>
-    </header>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Profile</h2>
       <p>
         Medical student and founder of RafeeQ, a learning platform for medical students. I am interested in education, technology, and continuous self-development.
       </p>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Education</h2>
-      <ul>
-        <li><span class="item-title">Medical Student</span> — Faculty of Medicine, Minia University</li>
+      <ul class="compact-list">
+        <li><strong>Medical Student</strong> — Faculty of Medicine, Minia University</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Experience</h2>
-      <ul>
-        <li>
-          <span class="item-title">Founder</span> — RafeeQ
-          <div class="item-meta">Medical learning platform</div>
-          <div>
-            Started RafeeQ as a platform to support medical students with helpful and organized learning resources.
-          </div>
-        </li>
+      <ul class="compact-list">
+        <li><strong>Founder — RafeeQ</strong><br>Started RafeeQ as a platform to support medical students with organized learning resources.</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Arabic — Native; English — B2; French — A2.</li>
-        <li><strong>Digital skills:</strong> Microsoft Word, Microsoft PowerPoint, presentation skills, and basic programming knowledge.</li>
-        <li><strong>Strengths:</strong> Self-learning, communication, analytical thinking, and leadership.</li>
+      <ul class="compact-list">
+        <li><strong>Languages:</strong> Arabic — Native; English — B2; French — A2</li>
+        <li><strong>Digital skills:</strong> Microsoft Word, Microsoft PowerPoint, presentation skills, and basic programming knowledge</li>
+        <li><strong>Strengths:</strong> Self-learning, communication, analytical thinking, and leadership</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <span class="item-title">RafeeQ</span> — Founder of a learning platform designed to support medical students.
-        </li>
+      <ul class="compact-list">
+        <li><strong>RafeeQ</strong> — Learning platform designed to support medical students</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Interests</h2>
-      <ul class="tag-list">
+      <ul class="interest-tags">
         <li>Chess</li>
         <li>Swimming</li>
         <li>Video Games</li>
@@ -248,15 +235,15 @@ title: Ahmed Ali Hakim Abdulgawad
         <li>Electromagnetism</li>
         <li>Modern Physics</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="cv-section">
+    <div class="cv-section">
       <h2>Contact</h2>
       <ul class="contact-list">
         <li><strong>Email:</strong> <a href="mailto:ahmedali17v@gmail.com">ahmedali17v@gmail.com</a></li>
         <li><strong>WhatsApp:</strong> <a href="https://wa.me/201101452846">+20 110 145 2846</a></li>
         <li><strong>Phone:</strong> <a href="tel:+201008988182">+20 100 898 8182</a></li>
       </ul>
-    </section>
+    </div>
   </div>
 </div>
