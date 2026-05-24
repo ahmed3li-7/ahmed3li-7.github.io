@@ -174,7 +174,7 @@ title: Ahmed Ali Hakim Abdulgawad
       <div>
         <h1 class="cv-name">Ahmed Ali Hakim Abdulgawad</h1>
         <p class="cv-role">Medical Student | Founder of RafeeQ</p>
-        <div class="cv-badge">Founder of RafeeQ</div>
+    
         <p class="cv-contact">
           <strong>Email:</strong> <a href="mailto:ahmedali17v@gmail.com">ahmedali17v@gmail.com</a><br>
           <strong>Phone:</strong> <a href="tel:+201008988182">+20 100 898 8182</a><br>
@@ -186,7 +186,7 @@ title: Ahmed Ali Hakim Abdulgawad
     <div class="cv-section">
       <h2>Profile</h2>
       <p>
-        Medical student and founder of RafeeQ, a learning platform for medical students. I am interested in education, technology, and continuous self-development.
+        Medical student and founder of RafeeQ, a learning platform for medical students. I am interested in education, Science, and continuous self-development.
       </p>
     </div>
 
@@ -207,7 +207,7 @@ title: Ahmed Ali Hakim Abdulgawad
     <div class="cv-section">
       <h2>Skills</h2>
       <ul class="compact-list">
-        <li><strong>Languages:</strong> Arabic — Native; English — B2; French — A2</li>
+        <li><strong>Languages:</strong> Arabic — Native English — B2 French — A2</li>
         <li><strong>Digital skills:</strong> Microsoft Word, Microsoft PowerPoint, presentation skills, and basic programming knowledge</li>
         <li><strong>Strengths:</strong> Self-learning, communication, analytical thinking, and leadership</li>
       </ul>
@@ -216,7 +216,7 @@ title: Ahmed Ali Hakim Abdulgawad
     <div class="cv-section">
       <h2>Projects</h2>
       <ul class="compact-list">
-        <li><strong>RafeeQ</strong> — Learning platform designed to support medical students</li>
+        <li><strong>RafeeQ</strong> — Learning platform designed to support medical students.</li>
       </ul>
     </div>
 
